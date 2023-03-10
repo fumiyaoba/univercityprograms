@@ -1,0 +1,3437 @@
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -66 dBm
+  Lock_Quality= 0
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = c0:25:a2:e2:9c:ae (TA=SA)
+     addr3     = c0:25:a2:e2:9c:ae (BSSID/STA)
+     SC        = 54400
+     fcs       = 0x307966
+###[ 802.11 Beacon ]### 
+        timestamp = 23060178535305
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 11
+           info      = 'watabe-lab.'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'AL '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 20
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 4
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 0
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 7
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Microsoft WPA ]### 
+           ID        = Vendor Specific
+           len       = 22
+           oui       = Microsoft Corp. (00:50:f2)
+           type      = 0x1
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  suite     = PSK
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x02\x01\x00\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 30
+           oui       = Epigram, Inc. (00:90:4c)
+           info      = '3\\xec\x19\x1f\\xff\\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 26
+           oui       = Epigram, Inc. (00:90:4c)
+           info      = '4\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 6
+           oui       = Realtek Semiconductor Corp. (00:e0:4c)
+           info      = '\x02\x01`'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 79
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10T\x00\x08\x00\x06\x00P\\xf2\x04\x00\x01\x10\x11\x00\x08WG1200HS\x10\x08\x00\x02\x06\\x84\x10G\x00\x10\t\x18'6ETcr\\x81\\x90\\xc0%\\xa2✬\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 "
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -52 dBm
+  Lock_Quality= 100
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = f8:b7:97:24:9b:26 (TA=SA)
+     addr3     = f8:b7:97:24:9b:26 (BSSID/STA)
+     SC        = 45520
+     fcs       = 0x776a478a
+###[ 802.11 Beacon ]### 
+        timestamp = 7144517945256
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'Mori-Lab-2020-2'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 0
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00\\xb4\x00\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Microsoft WPA ]### 
+           ID        = Vendor Specific
+           len       = 22
+           oui       = Microsoft Corp. (00:50:f2)
+           type      = 0x1
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  suite     = PSK
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x02\x01\x00\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00\\xc0'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Realtek Semiconductor Corp. (00:e0:4c)
+           info      = '\x02\x02\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 80
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10T\x00\x08\x00\x06\x00P\\xf2\x04\x00\x01\x10\x11\x00\tWG1800HP4\x10\x08\x00\x02&\\x88\x10G\x00\x10\t\x18'6ETcr\\x81\\x90\\xf8\\xb7\\x97$\\x9b$\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 "
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x01\x00\x00\x00\x00\x00\x00\x00'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -76 dBm
+  Lock_Quality= 36
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = QoS Null (no data)
+     type      = Data
+     proto     = 0
+     FCfield   = from-DS
+     ID        = 14849
+     addr1     = ee:b0:6a:fa:1a:0d (RA=DA)
+     addr2     = cc:e1:d5:6f:4d:50 (TA=BSSID)
+     addr3     = cc:e1:d5:6f:4d:50 (SA)
+     SC        = 21904
+     fcs       = 0x93f0c3fd
+###[ 802.11 QoS ]### 
+        A_MSDU_Present= 0
+        Ack_Policy= 0
+        EOSP      = 0
+        TID       = 0
+        TXOP      = 0
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -82 dBm
+  Lock_Quality= 25
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9e:6c:40 (TA=SA)
+     addr3     = fc:7f:f1:9e:6c:40 (BSSID/STA)
+     SC        = 38320
+     fcs       = 0x9b950ec2
+###[ 802.11 Beacon ]### 
+        timestamp = 243517030813
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00\r\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\t'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -82 dBm
+  Lock_Quality= 56
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 18:c2:bf:37:5e:29 (TA=SA)
+     addr3     = 18:c2:bf:37:5e:29 (BSSID/STA)
+     SC        = 49328
+     fcs       = 0xb7fea353
+###[ 802.11 Beacon ]### 
+        timestamp = 4237872742810
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'Buffalo-G-5E28'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 9.0 Mbps, 18.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 2
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 30
+###[ 802.11 Information Element ]### 
+           ID        = 51
+           len       = 8
+           info      = ' \x01\x02\x03\x04\x05\x06\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 51
+           len       = 8
+           info      = '!\x05\x06\x07\x08\t\n\x0b'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 4
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 12.0 Mbps, 24.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 49
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x10\\xbc2\\x9e\x00\x1d\\xd8\x11\\xb2\\x86\x01\x18¿7^)\x10<\x00\x01\x01\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Information Element ]### 
+           ID        = BSS Load
+           len       = 5
+           info      = '\x00\x00\x00\x12z'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 1
+           HTC_HT_Support= 1
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 3
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 3
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 3
+           Explicit_Compressed_Beamforming_Feedback= 2
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 1
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 1
+           Receive_NDP= 1
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x02\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\x91y\\xc33\\xaa\\xff\x18\x06\\xaa\\xff\x18\x06'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x00\x00\x00\\xaa\\xff'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Ralink Technology, Corp. (00:0c:43)
+           info      = '\x0f\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 33
+           oui       = MediaTek Inc. (00:0c:e7)
+           info      = '\x08\x00\x00\x00\\xbf\x0c\\xb1\x01\\xc03*\\xff\\x92\x04*\\xff\\x92\x04\\xc0\x05\x00\x00\x00*\\xff\\xc3\x03\x01\x02\x02'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -64 dBm
+  Lock_Quality= 77
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:80 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:80 (BSSID/STA)
+     SC        = 48384
+     fcs       = 0x7f9d6337
+###[ 802.11 Beacon ]### 
+        timestamp = 5605925171593
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00%\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x07'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -64 dBm
+  Lock_Quality= 40
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:81 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:81 (BSSID/STA)
+     SC        = 48400
+     fcs       = 0xf2dc5328
+###[ 802.11 Beacon ]### 
+        timestamp = 5605925173957
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00%\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x07'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -52 dBm
+  Lock_Quality= 100
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = f8:b7:97:24:9b:26 (TA=SA)
+     addr3     = f8:b7:97:24:9b:26 (BSSID/STA)
+     SC        = 45536
+     fcs       = 0xc15077de
+###[ 802.11 Beacon ]### 
+        timestamp = 7144518041843
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'Mori-Lab-2020-2'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 0
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00\\xb4\x00\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Microsoft WPA ]### 
+           ID        = Vendor Specific
+           len       = 22
+           oui       = Microsoft Corp. (00:50:f2)
+           type      = 0x1
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  suite     = PSK
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x02\x01\x00\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00\\xc0'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Realtek Semiconductor Corp. (00:e0:4c)
+           info      = '\x02\x02\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 80
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10T\x00\x08\x00\x06\x00P\\xf2\x04\x00\x01\x10\x11\x00\tWG1800HP4\x10\x08\x00\x02&\\x88\x10G\x00\x10\t\x18'6ETcr\\x81\\x90\\xf8\\xb7\\x97$\\x9b$\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 "
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x01\x00\x00\x00\x00\x00\x00\x00'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -76 dBm
+  Lock_Quality= 0
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = cc:e1:d5:6f:4d:50 (TA=SA)
+     addr3     = cc:e1:d5:6f:4d:50 (BSSID/STA)
+     SC        = 21920
+     fcs       = 0x37218e32
+###[ 802.11 Beacon ]### 
+        timestamp = 608331778328
+        beacon_interval= 100
+        cap       = short-slot+res12+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'Buffalo-G-4D5A'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 3
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 4
+###[ 802.11 Information Element ]### 
+           ID        = 47
+           len       = 1
+           info      = '\x04'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x03\x08\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x00\x00\x00\x00\x00@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 49
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x108~\\xe2\\x9cr,\x11\\xe3\\x8e\\xdb\\xcd#\n\\xd8\\xc7&\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Broadcom (00:10:18)
+           info      = '\x02\x03\x00\x1c\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x88\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'r\x08\x01\x00\x00'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -66 dBm
+  Lock_Quality= 0
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = c0:25:a2:e2:9c:ae (TA=SA)
+     addr3     = c0:25:a2:e2:9c:ae (BSSID/STA)
+     SC        = 54416
+     fcs       = 0x4a51f3a8
+###[ 802.11 Beacon ]### 
+        timestamp = 23060178648658
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 11
+           info      = 'watabe-lab.'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'AL '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 20
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 4
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 0
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 7
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Microsoft WPA ]### 
+           ID        = Vendor Specific
+           len       = 22
+           oui       = Microsoft Corp. (00:50:f2)
+           type      = 0x1
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  suite     = PSK
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x02\x01\x00\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 30
+           oui       = Epigram, Inc. (00:90:4c)
+           info      = '3\\xec\x19\x1f\\xff\\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 26
+           oui       = Epigram, Inc. (00:90:4c)
+           info      = '4\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 6
+           oui       = Realtek Semiconductor Corp. (00:e0:4c)
+           info      = '\x02\x01`'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 79
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10T\x00\x08\x00\x06\x00P\\xf2\x04\x00\x01\x10\x11\x00\x08WG1200HS\x10\x08\x00\x02\x06\\x84\x10G\x00\x10\t\x18'6ETcr\\x81\\x90\\xc0%\\xa2✬\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 "
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -82 dBm
+  Lock_Quality= 100
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 18:c2:bf:37:5e:29 (TA=SA)
+     addr3     = 18:c2:bf:37:5e:29 (BSSID/STA)
+     SC        = 49344
+     fcs       = 0xa362ee10
+###[ 802.11 Beacon ]### 
+        timestamp = 4237872845212
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'Buffalo-G-5E28'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 9.0 Mbps, 18.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 2
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 30
+###[ 802.11 Information Element ]### 
+           ID        = 51
+           len       = 8
+           info      = ' \x01\x02\x03\x04\x05\x06\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 51
+           len       = 8
+           info      = '!\x05\x06\x07\x08\t\n\x0b'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 4
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 12.0 Mbps, 24.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 49
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x10\\xbc2\\x9e\x00\x1d\\xd8\x11\\xb2\\x86\x01\x18¿7^)\x10<\x00\x01\x01\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Information Element ]### 
+           ID        = BSS Load
+           len       = 5
+           info      = '\x00\x00\x00\x12z'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 1
+           HTC_HT_Support= 1
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 3
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 3
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 3
+           Explicit_Compressed_Beamforming_Feedback= 2
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 1
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 1
+           Receive_NDP= 1
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x02\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\x91y\\xc33\\xaa\\xff\x18\x06\\xaa\\xff\x18\x06'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x00\x00\x00\\xaa\\xff'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Ralink Technology, Corp. (00:0c:43)
+           info      = '\x0f\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 33
+           oui       = MediaTek Inc. (00:0c:e7)
+           info      = '\x08\x00\x00\x00\\xbf\x0c\\xb1\x01\\xc03*\\xff\\x92\x04*\\xff\\x92\x04\\xc0\x05\x00\x00\x00*\\xff\\xc3\x03\x01\x02\x02'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -80 dBm
+  Lock_Quality= 29
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 12:66:82:4c:65:6a (TA=SA)
+     addr3     = 12:66:82:4c:65:6a (BSSID/STA)
+     SC        = 18336
+     fcs       = 0x8b6ef173
+###[ 802.11 Beacon ]### 
+        timestamp = 10281642701184
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'aterm-9d635a-gw'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 2
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 20
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x01\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Atheros Communications, Inc. (00:03:7f)
+           info      = '\x01\x01\x00\x00\\xff\x7f'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x02\x01\x00\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00@'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -64 dBm
+  Lock_Quality= 100
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:80 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:80 (BSSID/STA)
+     SC        = 48416
+     fcs       = 0xb85c736e
+###[ 802.11 Beacon ]### 
+        timestamp = 5605925274080
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00%\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x07'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -82 dBm
+  Lock_Quality= 34
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:4a:e9:20:69:d2 (TA=SA)
+     addr3     = fc:4a:e9:20:69:d2 (BSSID/STA)
+     SC        = 32880
+     fcs       = 0x695cd838
+###[ 802.11 Beacon ]### 
+        timestamp = 1195882088063
+        beacon_interval= 100
+        cap       = short-slot+res12+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'BCW710J-578F0-G'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Information Element ]### 
+           ID        = 47
+           len       = 1
+           info      = '\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 24
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = TKIP
+           nb_pairwise_cipher_suites= 2
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = TKIP
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 Information Element ]### 
+           ID        = BSS Load
+           len       = 5
+           info      = '\x00\x00\\x96\x00\x00'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 1
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 0
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x08\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x05\x00\x08\x00\x00\x00\x00@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 39
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x10\\xec\\x99pP\\xb9\\xf7\\xfa\\xfa\\xfc\\x99\\xfc\x13Q\\x9bz(\x10<\x00\x01\x03'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Broadcom (00:10:18)
+           info      = '\x02\x00\x00\x0c\x00\x00'
+###[ 802.11 Microsoft WPA ]### 
+           ID        = Vendor Specific
+           len       = 26
+           oui       = Microsoft Corp. (00:50:f2)
+           type      = 0x1
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = TKIP
+           nb_pairwise_cipher_suites= 2
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = CCMP-128
+            |###[ Cipher suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  cipher    = TKIP
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Microsoft Corp. (00:50:f2)
+            |  suite     = PSK
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'r\x08\x01\x00\x00'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -76 dBm
+  Lock_Quality= 75
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9e:6c:40 (TA=SA)
+     addr3     = fc:7f:f1:9e:6c:40 (BSSID/STA)
+     SC        = 38384
+     fcs       = 0xc7a5bbe7
+###[ 802.11 Beacon ]### 
+        timestamp = 243517235588
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00\r\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\t'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -76 dBm
+  Lock_Quality= 93
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9e:6c:41 (TA=SA)
+     addr3     = fc:7f:f1:9e:6c:41 (BSSID/STA)
+     SC        = 38400
+     fcs       = 0x84663813
+###[ 802.11 Beacon ]### 
+        timestamp = 243517238187
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x02'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00\r\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\t'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -80 dBm
+  Lock_Quality= 31
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 12:66:82:4c:65:6a (TA=SA)
+     addr3     = 12:66:82:4c:65:6a (BSSID/STA)
+     SC        = 18352
+     fcs       = 0x93f026ff
+###[ 802.11 Beacon ]### 
+        timestamp = 10281642803584
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'aterm-9d635a-gw'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 2
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 20
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x01\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Atheros Communications, Inc. (00:03:7f)
+           info      = '\x01\x01\x00\x00\\xff\x7f'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x02\x01\x00\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00@'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -66 dBm
+  Lock_Quality= 100
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:80 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:80 (BSSID/STA)
+     SC        = 48960
+     fcs       = 0x4fe4b37
+###[ 802.11 Beacon ]### 
+        timestamp = 5605925376492
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00%\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x07'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -64 dBm
+  Lock_Quality= 100
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:81 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:81 (BSSID/STA)
+     SC        = 48976
+     fcs       = 0x2721a6e9
+###[ 802.11 Beacon ]### 
+        timestamp = 5605925378856
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5 Mbps, 11.0 Mbps, 18.0 Mbps, 24.0 Mbps, 36.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 48.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 0
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 65535
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x00\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x05\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 28
+           info      = '#\x05\x00\x08\x12\x00\x10\x02 \x0e\\xc0\rA\\x83\x18\x00\x0c\x00\\xfa\\xff\\xfa\\xff9\x1c\\xc7q\x1c\x07'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00%\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x07'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 26
+  present   = Flags+Rate+Channel+dBm_AntSignal+Lock_Quality+RXFlags+RadiotapNS+Ext
+  \Ext       \
+   |###[ RadioTap Extended presence mask ]### 
+   |  present   = b5+b11
+  Flags     = FCS
+  Rate      = 1.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= CCK+2GHz
+  dBm_AntSignal= -66 dBm
+  Lock_Quality= 0
+  RXFlags   = 
+  notdecoded= '\x00\x00'
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = f8:b7:97:e7:7e:96 (TA=SA)
+     addr3     = f8:b7:97:e7:7e:96 (BSSID/STA)
+     SC        = 45584
+     fcs       = 0x8251f425
+###[ 802.11 Beacon ]### 
+        timestamp = 4953289220877
+        beacon_interval= 100
+        cap       = short-slot+res12+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'shiomotolab-11g'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [1.0(B) Mbps, 2.0(B) Mbps, 5.5(B) Mbps, 11.0(B) Mbps, 6.0 Mbps, 9.0 Mbps, 12.0 Mbps, 18.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 1
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 1
+            |  num_channels= 13
+            |  mtp       = 25
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 14
+            |  num_channels= 1
+            |  mtp       = 22
+           pad       = 0
+###[ 802.11 ERP ]### 
+           ID        = ERP
+           len       = 1
+           NonERP_Present= 0
+           Use_Protection= 0
+           Barker_Preamble_Mode= 0
+           res       = 0
+###[ 802.11 Rates ]### 
+           ID        = Extended Supported Rates
+           len       = 4
+           rates     = [24.0 Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 1
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'S\n\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 59
+           len       = 2
+           info      = 'Q\x00'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 0
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 0
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 1
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4295032831
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 1
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 3
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 3
+           Explicit_Compressed_Beamforming_Feedback= 2
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 1
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 1
+           Receive_NDP= 1
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 1
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\x01\x08\x11\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 74
+           len       = 14
+           info      = '\x14\x00\n\x00,\x01\\xc8\x00\x14\x00\x05\x00\x19\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x01\x10\x08\\x80\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = Interworking
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 108
+           len       = 2
+           info      = '\x7f\x00'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\x92x\\xa9\x13\\xfa\\xff\x00\x00\\xfa\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x00\x01\x00\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 29
+           info      = '#\x05\x00\\x80\x12@\x10\x020\x02\\x80oI\\x84\x0c\x00\x00\x00\\xfa\\xff\\xfa\\xffy\x1c\\xc7q\x1c\\xc7\\xf1'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 8
+           info      = '$\\xf4\\x81\x01\x04\\xfc\\xff\x04'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = "& \x03\\xff\r'\\xff\rB\\xff\rb\\xff\r"
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 2
+           info      = "'\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 26
+           oui       = Epigram, Inc. (00:90:4c)
+           info      = '\x04\x08\\xbf\x0c\\x92x\\xa9\x13\\xfa\\xff\x00\x00\\xfa\\xff\x00\x00\\xc0\x05\x00\x01\x00\\xfc\\xff'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 34
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10W\x00\x01\x01\x10<\x00\x01\x01\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Wi-Fi Alliance (50:6f:9a)
+           info      = '\x16\x01\x01@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 5
+           oui       = Metalink LTD. (00:09:86)
+           info      = '\x01\x00'
+

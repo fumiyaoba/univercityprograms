@@ -1,0 +1,3451 @@
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5320
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -54 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9f:2a:50 (TA=SA)
+     addr3     = fc:7f:f1:9f:2a:50 (BSSID/STA)
+     SC        = 52176
+     fcs       = 0xa2cc1c2c
+###[ 802.11 Beacon ]### 
+        timestamp = 15482163262
+        beacon_interval= 100
+        cap       = ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 64
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x12\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '@\x07\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x04\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb0y\\x83\x0f\\xaa\\xff\x00\x00\\xaa\\xff\x00 '
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01:\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02...'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 36
+           info      = '#\x05\x00\x08\x12\x00\x10\x04 \x0e\\xc0m[\\x83\x18\x00\x0c\x00\\xaa\\xff\\xaa\\xff;\x1c\\xc7q\x1c\\xc7q\x1c\\xc7q\\xf4\x03\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00:\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5320
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -54 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9f:2a:51 (TA=SA)
+     addr3     = fc:7f:f1:9f:2a:51 (BSSID/STA)
+     SC        = 52192
+     fcs       = 0x328b00d
+###[ 802.11 Beacon ]### 
+        timestamp = 15482163730
+        beacon_interval= 100
+        cap       = ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 64
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x12\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '@\x07\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x04\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb0y\\x83\x0f\\xaa\\xff\x00\x00\\xaa\\xff\x00 '
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01:\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02...'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 36
+           info      = '#\x05\x00\x08\x12\x00\x10\x04 \x0e\\xc0m[\\x83\x18\x00\x0c\x00\\xaa\\xff\\xaa\\xff;\x1c\\xc7q\x1c\\xc7q\x1c\\xc7qq \\xa4\x08'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00:\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5320
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -92 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 84:af:ec:6d:41:a7 (TA=SA)
+     addr3     = 84:af:ec:6d:41:a7 (BSSID/STA)
+     SC        = 35456
+     fcs       = 0x8199f5db
+###[ 802.11 Beacon ]### 
+        timestamp = 1963276288060
+        beacon_interval= 100
+        cap       = res8+res12+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'Buffalo-A-41AE'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 60
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 40
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 44
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 48
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 52
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 56
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 60
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 64
+            |  num_channels= 1
+            |  mtp       = 21
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 104
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 108
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 112
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 116
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 120
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 124
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 128
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 132
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 136
+            |  num_channels= 1
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 140
+            |  num_channels= 1
+            |  mtp       = 23
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x0c\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '@\x0f\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x00\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb2Y\\x82\x0f\\xea\\xff\x00\x00\\xea\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01:\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02\x02\x02\x02'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 49
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x10\\xcdCg\\xe8\\xcfi\x11\\xe6\\xadT#\\xb5\\x95G\\xfa\\xa6\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Broadcom (00:10:18)
+           info      = '\x02\x03\x00\x1c\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x88\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'r\x00\x01\x00\x00'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -83 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = e4:ce:8f:52:c5:82 (RA)
+     fcs       = 0x1b9d5df
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -67 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 24:f2:7f:a0:5d:d0 (TA=SA)
+     addr3     = 24:f2:7f:a0:5d:d0 (BSSID/STA)
+     SC        = 37904
+     fcs       = 0x1e3e5da2
+###[ 802.11 Beacon ]### 
+        timestamp = 15545599590401
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 100
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'd\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x08\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb1y\\x8b3\\xaa\\xff\x00\x00\\xaa\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01j\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x88\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -66 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 24:f2:7f:a0:5d:d1 (TA=SA)
+     addr3     = 24:f2:7f:a0:5d:d1 (BSSID/STA)
+     SC        = 12976
+     fcs       = 0x6b180a61
+###[ 802.11 Beacon ]### 
+        timestamp = 15545599590721
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 100
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'd\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x08\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb1y\\x8b3\\xaa\\xff\x00\x00\\xaa\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01j\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x88\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -80 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 38:17:c3:a1:3f:10 (TA=SA)
+     addr3     = 38:17:c3:a1:3f:10 (BSSID/STA)
+     SC        = 2992
+     fcs       = 0x19b644b7
+###[ 802.11 Beacon ]### 
+        timestamp = 15545591091201
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 100
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'd\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x08\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb1y\\x8b3\\xaa\\xff\x00\x00\\xaa\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01j\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x8a\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -80 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 38:17:c3:a1:3f:11 (TA=SA)
+     addr3     = 38:17:c3:a1:3f:11 (BSSID/STA)
+     SC        = 59632
+     fcs       = 0xb5b54692
+###[ 802.11 Beacon ]### 
+        timestamp = 15545591091521
+        beacon_interval= 100
+        cap       = short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 100
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'd\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x08\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb1y\\x8b3\\xaa\\xff\x00\x00\\xaa\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01j\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x8a\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -85 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = e4:ce:8f:52:c5:82 (RA)
+     fcs       = 0x1b9d5df
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5500
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -85 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = cc:f4:11:42:6a:f6 (TA=SA)
+     addr3     = cc:f4:11:42:6a:f6 (BSSID/STA)
+     SC        = 18176
+     fcs       = 0xff7e58c6
+###[ 802.11 Beacon ]### 
+        timestamp = 1238344601657
+        beacon_interval= 100
+        cap       = res12+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 10
+           info      = 'jinno-nest'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 36
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x01\x02\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 6
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 4
+            |  mtp       = 20
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'r\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 59
+           len       = 2
+           info      = '\\x80\x00'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 1
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '$\x05\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 9
+           info      = '\x04\x00\x08\x02\x00\x00\x00@@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb2y\\x8b3\\xaa\\xff\x18\x06\\xaa\\xff\x18\x06'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01*\x00\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02((('
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 12
+           oui       = Google, Inc. (f4:f5:e8)
+           info      = '\x05\x05\\xff\x00\x00\\xff\\xff\\xff\\xff'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5540
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -30 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = f8:b7:97:e7:7e:97 (TA=SA)
+     addr3     = f8:b7:97:e7:7e:97 (BSSID/STA)
+     SC        = 60304
+     fcs       = 0x796a2178
+###[ 802.11 Beacon ]### 
+        timestamp = 3724716544014
+        beacon_interval= 100
+        cap       = res8+short-slot+res12+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 16
+           info      = 'shiomotolab-11ax'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 108
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 22
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 12
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x03'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 1
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'S\n\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 59
+           len       = 2
+           info      = '\\x81\x00'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 0
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 0
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 1
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4295032831
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 1
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 3
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 3
+           Explicit_Compressed_Beamforming_Feedback= 2
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 1
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 1
+           Receive_NDP= 1
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 1
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'l\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x00\x10\x08\\x80\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = Interworking
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 108
+           len       = 2
+           info      = '\x7f\x00'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xf6x\\xa9\x03\\xfa\\xff\x00\x00\\xfa\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01jr\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 5
+           info      = '\x036666'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 33
+           info      = '#\x05\x00\\x80\x12@\x18\x0c0\x02\\x80oI\\x84\x0c\x00\x00\x00\\xfa\\xff\\xfa\\xff\\xfa\\xff\\xfa\\xffy\x1c\\xc7q\x1c\\xc7\\xf1'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 8
+           info      = '$\\xf4\\x81\x01\x05\\xfc\\xff\x04'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = "& \x03\\xff\r'\\xff\rB\\xff\rb\\xff\r"
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 2
+           info      = "'\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 26
+           oui       = Epigram, Inc. (00:90:4c)
+           info      = '\x04\x08\\xbf\x0c\\xf6x\\xa9\x03\\xfa\\xff\x00\x00\\xfa\\xff\x00\x00\\xc0\x05\x01jr\\xfc\\xff'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 34
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10W\x00\x01\x01\x10<\x00\x01\x02\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Wi-Fi Alliance (50:6f:9a)
+           info      = '\x16\x01\x01@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 5
+           oui       = Metalink LTD. (00:09:86)
+           info      = '\x01\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = NEC Platforms, Ltd. (00:0d:02)
+           info      = '\x03\x01\x00\x00'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5540
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -89 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 20:c9:d0:22:04:ae (TA=SA)
+     addr3     = 20:c9:d0:22:04:ae (BSSID/STA)
+     SC        = 40128
+     fcs       = 0x6a2f12b6
+###[ 802.11 Beacon ]### 
+        timestamp = 9749434470801
+        beacon_interval= 100
+        cap       = res8+short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'AirMac Extreme'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 108
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x02\x03\x00\x08'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 30
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'l\x05\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x01\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Apple, Inc. (00:03:93)
+           info      = '\x01u\x03 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Apple, Inc. (00:17:f2)
+           info      = '\x03\x02\x01\\x80'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 14
+           oui       = Apple, Inc. (00:17:f2)
+           info      = '\x07\x00\x01\x01\x06 \\xc9\\xd0"\x04\\xad'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 11
+           oui       = Apple, Inc. (00:17:f2)
+           info      = '\x01\x00\x01\x01\x00\x00\x00\x07'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5560
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -86 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 34:95:db:20:06:67 (TA=SA)
+     addr3     = 34:95:db:20:06:67 (BSSID/STA)
+     SC        = 56720
+     fcs       = 0xba12c423
+###[ 802.11 Beacon ]### 
+        timestamp = 22291037757499
+        beacon_interval= 100
+        cap       = res8+short-slot+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 15
+           info      = 'elecom5g-200664'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 48
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x01\x03\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 60
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 40
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 44
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 48
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 52
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 56
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 60
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 64
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 104
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 108
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 112
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 116
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 120
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 124
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 128
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 132
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 136
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 140
+            |  num_channels= 1
+            |  mtp       = 20
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x03'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 1
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 6
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 4
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '0\x07\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x00\x00\x00\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb2\x01\\x803\\xea\\xff\x00\x00\\xea\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01*\x00\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02\\xd8\\xd8\\xd8'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Atheros Communications, Inc. (00:03:7f)
+           info      = '\x01\x01\x00\x00\\xff\x7f'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10I\x00\x06\x007*\x00\x01 '
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5560
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -84 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:90 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:90 (BSSID/STA)
+     SC        = 53392
+     fcs       = 0x1ccd6dc7
+###[ 802.11 Beacon ]### 
+        timestamp = 13866700873
+        beacon_interval= 100
+        cap       = ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 112
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x12\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'p\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x04\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb0y\\x83\x0f\\xaa\\xff\x00\x00\\xaa\\xff\x00 '
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01j\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02<<<'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 36
+           info      = '#\x05\x00\x08\x12\x00\x10\x04 \x0e\\xc0m[\\x83\x18\x00\x0c\x00\\xaa\\xff\\xaa\\xff;\x1c\\xc7q\x1c\\xc7q\x1c\\xc7q\\xf4\x03\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x003\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5560
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -84 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9d:a6:91 (TA=SA)
+     addr3     = fc:7f:f1:9d:a6:91 (BSSID/STA)
+     SC        = 53408
+     fcs       = 0xf97613f8
+###[ 802.11 Beacon ]### 
+        timestamp = 13866701323
+        beacon_interval= 100
+        cap       = ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'TCUWiFi'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 112
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x12\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 'p\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x04\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb0y\\x83\x0f\\xaa\\xff\x00\x00\\xaa\\xff\x00 '
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01j\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02<<<'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 36
+           info      = '#\x05\x00\x08\x12\x00\x10\x04 \x0e\\xc0m[\\x83\x18\x00\x0c\x00\\xaa\\xff\\xaa\\xff;\x1c\\xc7q\x1c\\xc7q\x1c\\xc7qq \\xa4\x08'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x003\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5580
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -50 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = cc:e1:d5:6f:4d:55 (TA=SA)
+     addr3     = cc:e1:d5:6f:4d:55 (BSSID/STA)
+     SC        = 18928
+     fcs       = 0x7b86afdd
+###[ 802.11 Beacon ]### 
+        timestamp = 3175053824063
+        beacon_interval= 100
+        cap       = res8+res12+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'Buffalo-A-4D5A'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 60
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 40
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 44
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 48
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 52
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 56
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 60
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 64
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 104
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 108
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 112
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 116
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 120
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 124
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 128
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 132
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 136
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 140
+            |  num_channels= 1
+            |  mtp       = 28
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x0f\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 't\r\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x00\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb2Y\\x82\x0f\\xea\\xff\x00\x00\\xea\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01z\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02\x02\x02\x02'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 49
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x108~\\xe2\\x9cr,\x11\\xe3\\x8e\\xdb\\xcd#\n\\xd8\\xc7&\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Broadcom (00:10:18)
+           info      = '\x02\x03\x00\x1c\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x88\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'r\x08\x01\x00\x00'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5580
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -49 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = cc:e1:d5:6f:4d:55 (TA=SA)
+     addr3     = cc:e1:d5:6f:4d:55 (BSSID/STA)
+     SC        = 18944
+     fcs       = 0x4bc361f3
+###[ 802.11 Beacon ]### 
+        timestamp = 3175053926486
+        beacon_interval= 100
+        cap       = res8+res12+ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 14
+           info      = 'Buffalo-A-4D5A'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x01\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 60
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 40
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 44
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 48
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 52
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 56
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 60
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 64
+            |  num_channels= 1
+            |  mtp       = 20
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 104
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 108
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 112
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 116
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 120
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 124
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 128
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 132
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 136
+            |  num_channels= 1
+            |  mtp       = 28
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 140
+            |  num_channels= 1
+            |  mtp       = 28
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x0f\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 3
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 7935 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 16777215
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = 't\r\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x04\x00\x00\x00\x00\x00\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb2Y\\x82\x0f\\xea\\xff\x00\x00\\xea\\xff\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01z\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02\x02\x02\x02'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 49
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = '\x04\x10J\x00\x01\x10\x10D\x00\x01\x02\x10G\x00\x108~\\xe2\\x9cr,\x11\\xe3\\x8e\\xdb\\xcd#\n\\xd8\\xc7&\x10<\x00\x01\x03\x10I\x00\x06\x007*\x00\x01 '
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Broadcom (00:10:18)
+           info      = '\x02\x03\x00\x1c\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x88\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Information Element ]### 
+           ID        = 70
+           len       = 5
+           info      = 'r\x08\x01\x00\x00'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5580
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -49 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Data
+     type      = Data
+     proto     = 0
+     FCfield   = from-DS+protected
+     ID        = 0
+     addr1     = 33:33:ff:fb:cb:7a (RA=DA)
+     addr2     = cc:e1:d5:6f:4d:55 (TA=BSSID)
+     addr3     = 00:c0:ee:4b:ad:c8 (SA)
+     SC        = 18960
+     fcs       = 0x30e50a28
+###[ 802.11 CCMP packet ]### 
+        PN0       = 118
+        PN1       = 132
+        res0      = 0
+        key_id    = 1
+        ext_iv    = 1
+        res1      = 0
+        PN2       = 175
+        PN3       = 0
+        PN4       = 0
+        PN5       = 0
+        data      = 'm\\xb6M\x12۞Q\\x82\\\\xc6n-f\\xc5\x11*\\xfaP\x10"\\xa4vHb\\xcek\\x91\\xe2S\x19\x06B\\xaf\\xc6a\\xf4\'\\x86f\\xd4\x05\\x92\\x86\\x95\\xc4\\xe8OЩ\\xa6&S\\xfc\x0c\x0b\\xb8\\x89[\\x9b,\\xf6\x13$\\x82P\\x83#\\xc1\x10\x1d\\xa6HAzLQ\\xe4eմ\\xaa\\xc9\\xf4\\xa2Q\x0bN\\x8f'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5620
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -92 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = 84:af:ec:ae:68:8c (TA=SA)
+     addr3     = 84:af:ec:ae:68:8c (BSSID/STA)
+     SC        = 16480
+     fcs       = 0x66b833c0
+###[ 802.11 Beacon ]### 
+        timestamp = 18942871040082
+        beacon_interval= 100
+        cap       = res8+ESS+privacy+short-preamble
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 12
+           info      = 'Ex-Nucl-Ph-A'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 124
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 30
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '?\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02\x1e\x1e\x1e'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = PSK
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 0
+           ptksa_replay_counter= 0
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 Information Element ]### 
+           ID        = BSS Load
+           len       = 5
+           info      = '\x05\x00\x00\x12z'
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 8589934591
+           res5      = 0
+           RD_Responder= 1
+           HTC_HT_Support= 1
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 3
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 3
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 3
+           Explicit_Compressed_Beamforming_Feedback= 2
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 1
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 1
+           Receive_NDP= 1
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '|\x05\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb1y\\xc33\\xaa\\xff\x18\x06\\xaa\\xff\x18\x06'
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01z\x00\\xaa\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 8
+           info      = '\x00\x00\x00\x00\x00\x00\x00@'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\x00\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Ralink Technology, Corp. (00:0c:43)
+           info      = '\x07\x00\x00\x00'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 33
+           oui       = MediaTek Inc. (00:0c:e7)
+           info      = '\x00\x00\x00\x00\\xbf\x0c\\xb1\x01\\xc03*\\xff\\x92\x04*\\xff\\x92\x04\\xc0\x05\x00\x00\x00*\\xff\\xc3\x03\x01\x02\x02'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 9
+           oui       = Buffalo.Inc (00:07:40)
+           info      = '\x01\x01\t\x00\x00\x00'
+
+------------------------------------------------------------------------------------------------------------------------
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 6.0 Mbps
+  ChannelFrequency= 5640
+  ChannelFlags= OFDM+5GHz
+  dBm_AntSignal= -37 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Beacon
+     type      = Management
+     proto     = 0
+     FCfield   = 
+     ID        = 0
+     addr1     = ff:ff:ff:ff:ff:ff (RA=DA)
+     addr2     = fc:7f:f1:9f:1a:70 (TA=SA)
+     addr3     = fc:7f:f1:9f:1a:70 (BSSID/STA)
+     SC        = 58032
+     fcs       = 0xb294e8eb
+###[ 802.11 Beacon ]### 
+        timestamp = 30289612859
+        beacon_interval= 100
+        cap       = ESS+privacy
+###[ 802.11 Information Element ]### 
+           ID        = SSID
+           len       = 7
+           info      = 'eduroam'
+###[ 802.11 Rates ]### 
+           ID        = Supported Rates
+           len       = 8
+           rates     = [6.0(B) Mbps, 9.0 Mbps, 12.0(B) Mbps, 18.0 Mbps, 24.0(B) Mbps, 36.0 Mbps, 48.0 Mbps, 54.0 Mbps]
+###[ 802.11 DSSS Parameter Set ]### 
+           ID        = DSSS Set
+           len       = 1
+           channel   = 128
+###[ 802.11 Information Element ]### 
+           ID        = TIM
+           len       = 4
+           info      = '\x00\x01\x00\x00'
+###[ 802.11 Country ]### 
+           ID        = Country
+           len       = 10
+           country_string= 'JP '
+           \descriptors\
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 36
+            |  num_channels= 8
+            |  mtp       = 23
+            |###[ 802.11 Country Constraint Triplet ]### 
+            |  first_channel_number= 100
+            |  num_channels= 11
+            |  mtp       = 30
+           pad       = 0
+###[ 802.11 Information Element ]### 
+           ID        = Power Constraint
+           len       = 1
+           info      = '\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 35
+           len       = 2
+           info      = '\x12\x00'
+###[ 802.11 RSN information ]### 
+           ID        = RSN
+           len       = 20
+           version   = 1
+           \group_cipher_suite\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_pairwise_cipher_suites= 1
+           \pairwise_cipher_suites\
+            |###[ Cipher suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  cipher    = CCMP-128
+           nb_akm_suites= 1
+           \akm_suites\
+            |###[ AKM suite ]### 
+            |  oui       = Ieee 802.11 (00:0f:ac)
+            |  suite     = 802.1X
+           mfp_capable= 0
+           mfp_required= 0
+           gtksa_replay_counter= 2
+           ptksa_replay_counter= 2
+           no_pairwise= 0
+           pre_auth  = 0
+           reserved  = 0
+###[ 802.11 HT Capabilities ]### 
+           ID        = HT Capabilities
+           len       = 26
+           L_SIG_TXOP_Protection= 0
+           Forty_Mhz_Intolerant= 0
+           PSMP      = 0
+           DSSS_CCK  = 0
+           Max_A_MSDU= 3839 o
+           Delayed_BlockAck= 0
+           Rx_STBC   = 1
+           Tx_STBC   = 1
+           Short_GI_40Mhz= 1
+           Short_GI_20Mhz= 1
+           Green_Field= 0
+           SM_Power_Save= disabled
+           Supported_Channel_Width= 20Mhz+40Mhz
+           LDPC_Coding_Capability= 1
+           res1      = 0
+           Min_MPDCU_Start_Spacing= 5
+           Max_A_MPDU_Length_Exponent= 3
+           res2      = 0
+           TX_Unequal_Modulation= 0
+           TX_Max_Spatial_Streams= 0
+           TX_RX_MCS_Set_Not_Equal= 0
+           TX_MCS_Set_Defined= 0
+           res3      = 0
+           RX_Highest_Supported_Data_Rate= 0
+           res4      = 0
+           RX_MSC_Bitmask= 4294967295
+           res5      = 0
+           RD_Responder= 0
+           HTC_HT_Support= 0
+           MCS_Feedback= 0
+           res6      = 0
+           PCO_Transition_Time= 0
+           PCO       = 0
+           res7      = 0
+           Channel_Estimation_Capability= 0
+           CSI_max_n_Rows_Beamformer_Supported= 0
+           Compressed_Steering_n_Beamformer_Antennas_Supported= 0
+           Noncompressed_Steering_n_Beamformer_Antennas_Supported= 0
+           CSI_n_Beamformer_Antennas_Supported= 0
+           Minimal_Grouping= 0
+           Explicit_Compressed_Beamforming_Feedback= 0
+           Explicit_Noncompressed_Beamforming_Feedback= 0
+           Explicit_Transmit_Beamforming_CSI_Feedback= 0
+           Explicit_Compressed_Steering= 0
+           Explicit_Noncompressed_Steering= 0
+           Explicit_CSI_Transmit_Beamforming= 0
+           Calibration= 0
+           Implicit_Trasmit_Beamforming= 0
+           Transmit_NDP= 0
+           Receive_NDP= 0
+           Transmit_Staggered_Sounding= 0
+           Receive_Staggered_Sounding= 0
+           Implicit_Transmit_Beamforming_Receiving= 0
+           ASEL      = 
+###[ 802.11 Information Element ]### 
+           ID        = HT Operation
+           len       = 22
+           info      = '\\x80\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = Extendend Capabilities
+           len       = 10
+           info      = '\x04\x00\x08\x00\x00\x00\x00@\x00@'
+###[ 802.11 Information Element ]### 
+           ID        = VHT Capabilities
+           len       = 12
+           info      = '\\xb0y\\x83\x0f\\xaa\\xff\x00\x00\\xaa\\xff\x00 '
+###[ 802.11 Information Element ]### 
+           ID        = 192
+           len       = 5
+           info      = '\x01z\x00\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 195
+           len       = 4
+           info      = '\x02<<<'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 36
+           info      = '#\x05\x00\x08\x12\x00\x10\x04 \x0e\\xc0m[\\x83\x18\x00\x0c\x00\\xaa\\xff\\xaa\\xff;\x1c\\xc7q\x1c\\xc7q\x1c\\xc7q\\xf4\x03\x00\x00'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 7
+           info      = '$\\xf4?\x00=\\xfc\\xff'
+###[ 802.11 Information Element ]### 
+           ID        = 255
+           len       = 14
+           info      = '&\x00\x00\\xa4\x08 \\xa4\x08@C\x08`2\x08'
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 24
+           oui       = Microsoft Corp. (00:50:f2)
+           info      = "\x02\x01\x01\\x80\x00\x03\\xa4\x00\x00'\\xa4\x00\x00BC^\x00b2/\x00"
+###[ 802.11 Vendor Specific ]### 
+           ID        = Vendor Specific
+           len       = 7
+           oui       = Aruba, a Hewlett Packard Enterprise Company (00:0b:86)
+           info      = '\x01\x04\x08\x12'
+
+------------------------------------------------------------------------------------------------------------------------

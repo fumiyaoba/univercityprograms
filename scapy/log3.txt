@@ -1,0 +1,455 @@
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -60 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = RTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 44544
+     addr1     = 98:48:27:ca:44:94 (RA)
+     addr2     = 84:af:ec:6d:41:a0 (TA)
+     fcs       = 0xb4c74ba6
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -60 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = CTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 33792
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     fcs       = 0xd1eb685b
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -54 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Block Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 512
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     addr2     = 98:48:27:ca:44:94 (TA)
+     fcs       = 0x4f4512eb
+###[ Raw ]### 
+        load      = '\x05\x000\\\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = RTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 37376
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     addr2     = 98:48:27:ca:44:94 (TA)
+     fcs       = 0xe9f6e60d
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -57 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = CTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 23552
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0xcb4bfecf
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -57 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 3840
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0x374c8b02
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = RTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 37376
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     addr2     = 98:48:27:ca:44:94 (TA)
+     fcs       = 0xe9f6e60d
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = CTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 23552
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0xcb4bfecf
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -58 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 3840
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0x374c8b02
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -62 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = RTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 41472
+     addr1     = 98:48:27:ca:44:94 (RA)
+     addr2     = 84:af:ec:6d:41:a0 (TA)
+     fcs       = 0x9e32da8b
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -59 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = CTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 30720
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     fcs       = 0x792f695e
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Block Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 512
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     addr2     = 98:48:27:ca:44:94 (TA)
+     fcs       = 0xb90c9773
+###[ Raw ]### 
+        load      = '\x05\x00@\\\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = RTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 37376
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     addr2     = 98:48:27:ca:44:94 (TA)
+     fcs       = 0xe9f6e60d
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -58 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = CTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 23552
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0xcb4bfecf
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -55 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 3840
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0x374c8b02
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -58 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 3840
+     addr1     = 98:48:27:ca:44:94 (RA)
+     fcs       = 0x374c8b02
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = RTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 41472
+     addr1     = 98:48:27:ca:44:94 (RA)
+     addr2     = 84:af:ec:6d:41:a0 (TA)
+     fcs       = 0x9e32da8b
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -59 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = CTS
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 30720
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     fcs       = 0x792f695e
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -56 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Block Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 512
+     addr1     = 84:af:ec:6d:41:a0 (RA)
+     addr2     = 98:48:27:ca:44:94 (TA)
+     fcs       = 0xf65194a3
+###[ Raw ]### 
+        load      = '\x05\x00`\\\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff'
+
+###[ RadioTap ]### 
+  version   = 0
+  pad       = 0
+  len       = 18
+  present   = Flags+Rate+Channel+dBm_AntSignal+Antenna+RXFlags
+  Flags     = FCS
+  Rate      = 24.0 Mbps
+  ChannelFrequency= 2417
+  ChannelFlags= OFDM+2GHz
+  dBm_AntSignal= -58 dBm
+  Antenna   = 0
+  RXFlags   = 
+  notdecoded= ''
+###[ 802.11-FCS ]### 
+     subtype   = Ack
+     type      = Control
+     proto     = 0
+     FCfield   = 
+     ID        = 23040
+     addr1     = 40:9f:38:7e:70:40 (RA)
+     fcs       = 0x1f8bbf94
+

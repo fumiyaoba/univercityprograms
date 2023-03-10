@@ -1,0 +1,52 @@
+# ライブラリのインポート
+"""import numpy as np
+import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import MinMaxScaler
+
+# データセットの読み込み
+df = pd.read_csv("/home/oba/csvpcapdataset/point08/sumtest.csv")
+
+# ラベルエンコーディング処理
+le=LabelEncoder()
+#df['Gender']=le.fit(df['Gender']).transform(df['Gender'])
+#lavel,AP4,AP3,AP2,AP1
+# 正規化
+"""scaler = MinMaxScaler()
+df.loc[:,:]  = scaler.fit_transform(df)
+df.head()
+"""
+# 特徴量と目的変数の選定
+X = df[["AP4","AP3", "AP2", "AP1"]]
+y  = df["lavel"]
+
+# テストデータ分割
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# KNNのインスタンス定義
+knn = KNeighborsClassifier(n_neighbors=6)
+
+# モデルfit
+knn.fit(X,y)
+
+#スコア計算
+score = format(knn.score(X_test, y_test))
+print('正解率:', score)"""
+
+[160 rows x 3 columns]
+35     2
+80     1
+97     1
+12     2
+72     1
+      ..
+93     1
+54     1
+153    3
+99     1
+73     1
+Name: lavel, Length: 160, dtype: int64
+正解率: 0.925
+0.925
